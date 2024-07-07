@@ -1,0 +1,124 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', 'Arial', sans-serif;
+}
+:root {
+  /* colors */
+  --color-white: white;
+  --color-yellow: #fabb18;
+  --color-gray: #ececec;
+  --color-light: #fff8e8;
+}
+main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 100px 1fr;
+  height: 100vh;
+  background-image: url(../assets/heroBG.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navBar {
+  grid-area: 1/ 2/ 2/ 3;
+  background-color: rgba(86, 68, 30, 70%);
+  color: var(--color-yellow);
+}
+.sideBar {
+  grid-area: 1/ 1/ 3/ 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding-top: 3rem;
+
+  background-color: rgba(86, 68, 30, 70%);
+  color: var(--color-yellow);
+}
+.sidbar-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.sidbar-button {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  gap: 1rem;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.sideBar img {
+  width: 2rem;
+}
+
+.sideBar-button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: var(--color-yellow);
+  font-size: 1.2rem;
+}
+.sidbar-button:hover > .sideBar-button {
+  color: black;
+}
+.sidbar-buttons div:hover {
+  background-color: var(--color-yellow);
+  color: black;
+  cursor: pointer;
+}
+
+.logo {
+  padding-bottom: 2rem;
+  display: block !important;
+  padding-left: 25%;
+  font-size: xx-large;
+  font-weight: 800;
+}
+
+.searcTasks {
+  width: 80%;
+  height: 2rem;
+  box-sizing: border-box;
+  border-radius: 1.5rem;
+  background-image: url('../assets/search.svg');
+  background-position: 95%;
+  background-size: 15px;
+  background-repeat: no-repeat;
+  padding: 15px;
+  border: none;
+  background-color: var(--color-light);
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right {
+  flex: 2;
+  margin-left: 25%;
+}
+.dashboard {
+  flex: 1;
+  margin-left: 2rem;
+}
+.dashboard:hover {
+  cursor: pointer;
+}
+.sideBar p:hover {
+  cursor: pointer;
+}
+.sidbar-button:hover {
+  color: black;
+}
