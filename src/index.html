@@ -22,52 +22,21 @@
           </div>
           <div class="NewTaskContainer">
             <div class="newTask">
-              <form class="taskInput" action="#">
-                <input type="text" name="title" placeholder="Title" /><input
-                  type="date"
-                  name="date"
-                  placeholder="Date"
-                />
+              <form class="taskInput" data-task-input action="">
+                <input type="text" data-title placeholder="Title" />
+                <input type="date" data-date placeholder="Date" />
                 <input
                   type="text"
-                  name="descriotion"
-                  placeholder="Descriotion"
+                  placeholder="description"
                   style="height: 4rem"
+                  data-description
                 />
 
-                <button class="addNewTask">Add task</button>
+                <button class="addNewTask" type="submit">Add task</button>
               </form>
             </div>
           </div>
-          <div class="tasks">
-            <div class="task">
-              <input type="checkbox" name="checkTask" class="checkTask" />
-              <div>
-                <p>14/05/2024</p>
-                <p>test task</p>
-              </div>
-              <i class="fa-regular fa-circle-xmark fa-xl"></i>
-            </div>
-            <div class="task">
-              <input type="checkbox" name="checkTask" class="checkTask" />
-              <div>
-                <p class="dueDate">14/05/2024</p>
-                <p class="title">test task</p>
-                <p class="taskDescription">
-                  Lorem ipsum dolor sit amet consectetur.
-                </p>
-              </div>
-              <i class="fa-regular fa-circle-xmark fa-xl"></i>
-            </div>
-            <div class="task">
-              <input type="checkbox" name="checkTask" class="checkTask" />
-              <div>
-                <p>14/05/2024</p>
-                <p>test task</p>
-              </div>
-              <i class="fa-regular fa-circle-xmark fa-xl"></i>
-            </div>
-          </div>
+          <div class="tasks"></div>
         </div>
       </div>
     </main>
